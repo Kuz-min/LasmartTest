@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="board">
+</div>
+
+<script>
+    window.onload = function () {
+        let board = new LasmartTest.Board();
+        board.ShowAsync('board', 500, 500);
+    };
+</script>
